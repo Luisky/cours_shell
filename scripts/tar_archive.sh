@@ -19,7 +19,7 @@ if [ $ret -eq 0 ]; then
   echo "nothing to do"
 elif [ $ret -eq 1 ]; then
   now=$(date +'%d-%m-%Y_%H-%M-%S')
-  tar -czf "${project_dir}/archives/scripts_$now.tar.gz" "$scripts_path"
+  tar -czf "${project_dir}/archives/scripts_$now.tar.gz" -C "$scripts_path"
 else
   echo "error"
 fi
