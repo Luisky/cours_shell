@@ -27,7 +27,7 @@ tree_print() {
 
                     j=$((j+1))
                     if [ $j -eq "$nb_files" ]; then
-                        echo "│   └── ${file}"
+                        echo "│   └── ${x}"
                     else
                         echo "│   ├── ${x}"
                     fi  
