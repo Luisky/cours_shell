@@ -30,8 +30,8 @@ elif ret == 1:
   tar_path = project_dir + "/archives/src_" + now_str + ".tar.gz"
   print(tar_path)
   # I could use import tarfile and its api but it's simpler like that
-  os.chdir(src_path)
-  subprocess.run(["tar", "-czf", tar_path, '.'])
+  os.chdir(project_dir)
+  subprocess.run(["tar", "-czf", tar_path, 'scripts/'])
 else:
   print("error with diff")
 
